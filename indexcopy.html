@@ -1,0 +1,632 @@
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <div id="asidebar">
+
+        <div id="asidebarcontainer">
+            <div id="xcontainer"><img src="Assets/Icons/close.png"></div>
+            <div id="asidepadding"></div>
+            <div id="asidelinks">
+                <div id="portfoliolink"><a href="index.html"><img src="Assets/Lettering/portfolio.png" id="portfoliolinkimg"></a></div>
+                <div id="shoplink"><a href="shop.html"><img src="Assets/Lettering/shop-orange.png" id="shoplinkimg"></a></div>
+                <div id="contactlink"><a href="contact.html"><img src="Assets/Lettering/contact-orange.png" id="contactlinkimg"></a></div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+   
+        <div id="background-container">
+            <!-- DESKTOP -->
+            <div id="expandedblock">
+                <div id="expandedimage"></div>
+                <p id="expandedclose">X</p>
+                <!--<p id="expandedtext">About the Image</p>-->
+            </div>
+            <div id="desktop-content">
+                <div id="desktopasidebutton"><img src="Assets/Icons/aside.png" class="asidebutton"></div>         
+                <div id="desktop-body">
+                    <div id="body-left">
+                        <div id="desktopportfoliobanner">
+                            <img src="Assets/Lettering/portfolio-cut.png" class="portfolioiconimg" id="desktopportfoliocut">
+                            <img src="Assets/Icons/BrushLogoW.png" class="portfolioiconimg" id="desktopwhitelogo">
+                        </div>
+                        <div id="body-desc">
+                            <div id="desc-line"></div>
+                            <div id="desc-text">
+                                <div id="desktopgalleryselection">
+                                    <p id="desktoptraditional">Traditional</p>
+                                    <p id="desktopgraphic">Graphic</p>
+                                    <p id="desktopunique">Unique</p>
+                                </div>
+                                <p id="desc-text-pg">While I love all different forms of art, traditional art is where my heart truly lies. Something about the tactility of a real painting, drawing, or sculpture makes excites my brain. I love the idea that if you use basic materials in a very purposeful way you can create something of astounding beauty and inspiration. I have done many drawings in my time but truly what I have worked up towards is oil painting. You will see a few oil paintings as well as acrylic in this gallery. There are some paintings that are extremely colorful matching the design of this website, those are my artworks done with POSCA paint pens.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="body-right">
+                        <div id="desktopcurrentimage"></div>
+                        <div id="desktoparrows">
+                            <img src="Assets/Icons/arrow.png" id="desktopprevarrow">
+                            <img src="Assets/Icons/arrow.png" id="desktopnextarrow">
+                        </div>
+                        <div id="desktopcarousel">
+                            <div id="desktopcont"><p>1</p></div>
+                            <div id="expand"><img src="Assets/Icons/expand.png" id="expandimg"></div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>     
+            </div>
+            <div id="desktopfooter">
+                    <div id="desktopfootercontents">
+                        <img id="footersig" src="Assets/Lettering/nicholasleach.png">
+                        <div id="desktopsocial">
+                            <ul>
+                                <li><a href="https://www.instagram.com/nicholasleach_art"><img src="Assets/Icons/instagram.png" class="desktopicon"></a></li>
+                                <li><a href="https://www.facebook.com/nicholasleachart"><img src="Assets/Icons/facebook.png" class="desktopicon"></a></li>
+                                <li><a href="mailto:nicholasleachart@gmail.com"><img src="Assets/Icons/gmail.png" class="desktopicon"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            <!-- MOBILE -->
+            <div id="mobile-content">
+                <div id="header">
+                    <img src="Assets/Icons/aside.png" class="asidebutton">
+                </div>
+                <div id="lightblueshape">
+                    <div id="redandpurpleshape">
+                        <div id="contentcontainer">
+                            <div id="portfoliobanner">
+                            <img src="Assets/Lettering/portfolio-cut.png" class="portfolioiconimg" id="portfoliocut">
+                            <img src="Assets/Icons/BrushLogoW.png" class="portfolioiconimg" id="whitelogo">
+                            </div>
+                            <div id="carousel">
+                                <div id="cont1"><p>1</p></div>
+                                <div id="cont2"><p>2</p></div>
+                                <div id="cont3"><p>3</p></div>
+                            </div>
+                            <div id="currentimage"></div>
+                            <div id="arrows">
+                                <img src="Assets/Icons/arrow.png" id="prevarrow">
+                                <img src="Assets/Icons/arrow.png" id="nextarrow">
+                            </div>
+                            <div id="galleryselection">
+                                <p id="traditional">Traditional</p>
+                                <p id="graphic">Graphic</p>
+                                <p id="unique">Unique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div id="social">
+                        <ul>
+                            <li><a href="https://www.instagram.com/nicholasleach_art"><img src="Assets/Icons/instagram.png"></a></li>
+                            <li><a href="https://www.facebook.com/nicholasleachart"><img src="Assets/Icons/facebook.png"></a></li>
+                            <li><a href="mailto:nicholasleachart@gmail.com"><img src="Assets/Icons/gmail.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+
+    
+    <div id="widescreenfooter"></div>
+
+</body>
+
+<script>
+
+    //Variables
+    var mobileContent = document.getElementById("mobile-content");
+    var widescreenFooter = document.getElementById("widescreenfooter");
+    var asideBar = document.getElementById("asidebar");
+    var asideButton = document.getElementsByClassName("asidebutton");
+    var xButton = document.getElementById("xcontainer");
+    var backgroundContainer = document.getElementById("background-container");
+    var lightblueShape = document.getElementById("lightblueshape");
+    var redandpurpleShape = document.getElementById("redandpurpleshape");
+    var header = document.getElementById("header");
+    var footer = document.getElementById("footer");
+    var carousel = document.getElementById("carousel");
+    var cont1 = document.getElementById("cont1");
+    var cont2 = document.getElementById("cont2");
+    var cont3 = document.getElementById("cont3");
+    var prevArrow = document.getElementById("prevarrow");
+    var nextArrow = document.getElementById("nextarrow");
+    var currentImage = document.getElementById("currentimage");
+    var traditional = document.getElementById("traditional");
+    var graphic = document.getElementById("graphic");
+    var unique = document.getElementById("unique");
+    var portfolioLink = document.getElementById("portfoliolinkimg");
+    var shopLink = document.getElementById("shoplinkimg");
+    var contactLink = document.getElementById("contactlinkimg");
+
+    //Desktop Variables
+    var desktopBody = document.getElementById("desktop-body");
+    var desktopBodyRight = document.getElementById("body-right");
+    var desktopContent = document.getElementById("desktop-content");
+    var desktopcarousel = document.getElementById("desktopcarousel");
+    var desktopcont = document.getElementById("desktopcont");
+    var desktopprevArrow = document.getElementById("desktopprevarrow");
+    var desktopnextArrow = document.getElementById("desktopnextarrow");
+    var desktopcurrentImage = document.getElementById("desktopcurrentimage");
+    var desktoptraditional = document.getElementById("desktoptraditional");
+    var desktopgraphic = document.getElementById("desktopgraphic");
+    var desktopunique = document.getElementById("desktopunique");
+    var desktopDescText = document.getElementById("desc-text-pg");
+    var desktopPortfolioCut = document.getElementById("desktopportfoliocut");
+    var desktopWhiteLogo = document.getElementById("desktopwhitelogo");
+    var expandedBlock = document.getElementById("expandedblock");
+    var expandedImage = document.getElementById("expandedimage");
+    var expandButton = document.getElementById("expand");
+    var expandButtonImg = document.getElementById("expandimg");
+    var expandClose = document.getElementById("expandedclose");
+    var desktopFooter = document.getElementById("desktopfooter");
+    var footerSig = document.getElementById("footersig");
+    var desktopIcon = document.getElementsByClassName("desktopicon");
+
+
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
+    // PHOTO GALLERY
+    /*pythongalleryt*/const gallery = ["<a href='index.html'><img src='Gallery/Traditional/1.png'></a>", "<img src='Gallery/Traditional/2.png'>", "<img src='Gallery/Traditional/3.png'>", "<img src='Gallery/Traditional/4.png'>", "<img src='Gallery/Traditional/5.png'>", "<img src='Gallery/Traditional/6.png'>", "<img src='Gallery/Traditional/7.png'>", "<img src='Gallery/Traditional/8.png'>", "<img src='Gallery/Traditional/9.png'>", "<img src='Gallery/Traditional/10.png'>", "<img src='Gallery/Traditional/11.png'>", "<img src='Gallery/Traditional/12.png'>", "<img src='Gallery/Traditional/13.png'>", "<img src='Gallery/Traditional/14.png'>", "<img src='Gallery/Traditional/15.png'>", "<img src='Gallery/Traditional/16.png'>", "<img src='Gallery/Traditional/17.png'>", "<img src='Gallery/Traditional/18.png'>", "<img src='Gallery/Traditional/19.png'>", "<img src='Gallery/Traditional/20.png'>", "<img src='Gallery/Traditional/21.png'>", "<img src='Gallery/Traditional/22.png'>", "<img src='Gallery/Traditional/23.png'>", "<img src='Gallery/Traditional/24.png'>", "<img src='Gallery/Traditional/25.png'>", "<img src='Gallery/Traditional/26.png'>", "<img src='Gallery/Traditional/27.png'>", "<img src='Gallery/Traditional/28.png'>", "<img src='Gallery/Traditional/29.png'>", "<img src='Gallery/Traditional/30.png'>", "<img src='Gallery/Traditional/31.png'>", "<img src='Gallery/Traditional/32.png'>", "<img src='Gallery/Traditional/33.png'>", "<img src='Gallery/Traditional/34.png'>", "<img src='Gallery/Traditional/35.png'>", "<img src='Gallery/Traditional/36.png'>", "<img src='Gallery/Traditional/37.png'>", "<img src='Gallery/Traditional/38.png'>", "<img src='Gallery/Traditional/39.png'>", "<img src='Gallery/Traditional/40.png'>", "<img src='Gallery/Traditional/41.png'>", "<img src='Gallery/Traditional/42.png'>", "<img src='Gallery/Traditional/43.png'>", "<img src='Gallery/Traditional/44.png'>", "<img src='Gallery/Traditional/45.png'>", "<img src='Gallery/Traditional/46.png'>", "<img src='Gallery/Traditional/47.png'>", "<img src='Gallery/Traditional/48.png'>", "<img src='Gallery/Traditional/49.png'>", "<img src='Gallery/Traditional/50.png'>", "<img src='Gallery/Traditional/51.png'>", "<img src='Gallery/Traditional/52.png'>", "<img src='Gallery/Traditional/53.png'>", "<img src='Gallery/Traditional/54.png'>", "<img src='Gallery/Traditional/55.png'>", "<img src='Gallery/Traditional/56.png'>", "<img src='Gallery/Traditional/57.png'>", "<img src='Gallery/Traditional/58.png'>", "<img src='Gallery/Traditional/59.png'>", "<img src='Gallery/Traditional/60.png'>", "<img src='Gallery/Traditional/61.png'>", "<img src='Gallery/Traditional/62.png'>", "<img src='Gallery/Traditional/63.png'>", "<img src='Gallery/Traditional/64.png'>", "<img src='Gallery/Traditional/65.png'>", "<img src='Gallery/Traditional/66.png'>", "<img src='Gallery/Traditional/67.png'>", "<img src='Gallery/Traditional/68.png'>", "<img src='Gallery/Traditional/69.png'>"];
+    /*pythongalleryg*/const gallery2 = ["<a href='index.html'><img src='Gallery/Graphic/1.png'></a>", "<img src='Gallery/Graphic/2.png'>", "<img src='Gallery/Graphic/3.png'>", "<img src='Gallery/Graphic/4.png'>", "<img src='Gallery/Graphic/5.png'>", "<img src='Gallery/Graphic/6.png'>", "<img src='Gallery/Graphic/7.png'>", "<img src='Gallery/Graphic/8.png'>", "<img src='Gallery/Graphic/9.png'>", "<img src='Gallery/Graphic/10.png'>", "<img src='Gallery/Graphic/11.png'>", , "<img src='Gallery/Graphic/12.png'>", "<img src='Gallery/Graphic/13.png'>", "<img src='Gallery/Graphic/14.png'>", "<img src='Gallery/Graphic/15.png'>", "<img src='Gallery/Graphic/16.png'>", "<img src='Gallery/Graphic/17.png'>", "<img src='Gallery/Graphic/18.png'>", "<img src='Gallery/Graphic/19.png'>", "<img src='Gallery/Graphic/20.png'>", "<img src='Gallery/Graphic/21.png'>", "<img src='Gallery/Graphic/22.png'>", "<img src='Gallery/Graphic/23.png'>", "<img src='Gallery/Graphic/24.png'>", "<img src='Gallery/Graphic/25.png'>", "<img src='Gallery/Graphic/26.png'>", "<img src='Gallery/Graphic/27.png'>", "<img src='Gallery/Graphic/28.png'>", "<img src='Gallery/Graphic/29.png'>", "<img src='Gallery/Graphic/30.png'>", "<img src='Gallery/Graphic/31.png'>", "<img src='Gallery/Graphic/32.png'>", "<img src='Gallery/Graphic/33.png'>", "<img src='Gallery/Graphic/34.png'>", "<img src='Gallery/Graphic/35.png'>", "<img src='Gallery/Graphic/36.png'>", "<img src='Gallery/Graphic/37.png'>", "<img src='Gallery/Graphic/38.png'>", "<img src='Gallery/Graphic/39.png'>", "<img src='Gallery/Graphic/40.png'>"];
+    /*pythongalleryu*/const gallery3 = ["<a href='index.html'><img src='Gallery/Unique/1.png'></a>", "<img src='Gallery/Unique/2.png'>", "<img src='Gallery/Unique/3.png'>", "<img src='Gallery/Unique/4.png'>", "<img src='Gallery/Unique/5.png'>"];
+    var currentGallery = gallery;
+
+    traditional.style.color = "white";
+    desktoptraditional.style.color = "white";
+
+    /*testmarker*/ const bro = ["1"];
+
+    //Carousel Function
+    var indxr = 0;
+
+    function updateGallery(galleryType) {
+        cont1.innerHTML = galleryType[indxr]||'';
+        cont2.innerHTML = galleryType[indxr + 1]||'';
+        cont3.innerHTML = galleryType[indxr + 2]||'';
+        currentImage.innerHTML = (indxr + 1) + ' / ' + galleryType.length;
+    }
+    
+    function updateDesktopGallery(galleryType) {
+        desktopcont.innerHTML = galleryType[indxr]||'';
+        desktopcurrentImage.innerHTML = (indxr + 1) + ' / ' + galleryType.length;
+    }
+
+    updateGallery(currentGallery);
+    updateDesktopGallery(currentGallery);
+    
+    function advanceGallery() {
+        indxr++;
+            if (indxr >= currentGallery.length - 1) {
+                indxr = currentGallery.length - 1;
+            }
+        updateGallery(currentGallery);
+        updateDesktopGallery(currentGallery);
+    }
+
+    function previousGallery() {
+        indxr--;
+        if (indxr <= 0) {
+            indxr = 0;
+        }
+        updateGallery(currentGallery);
+        updateDesktopGallery(currentGallery);
+    }
+
+    //Arrows
+    prevArrow.addEventListener("click", previousGallery);
+    nextArrow.addEventListener("click", advanceGallery);
+    desktopprevArrow.addEventListener("click", previousGallery);
+    desktopnextArrow.addEventListener("click", advanceGallery);
+
+    //Change Gallery Type
+    function traditionalGallery() {currentGallery = gallery; indxr = 0; carousel.style.paddingTop = "20px"; carousel.style.height = "250px"; updateGallery(currentGallery); updateDesktopGallery(currentGallery); traditional.style.color = "white"; graphic.style.color = "#69c1ed"; unique.style.color = "#69c1ed"; desktoptraditional.style.color = "white"; desktopgraphic.style.color = "#69c1ed"; desktopunique.style.color = "#69c1ed"; desktopDescText.innerHTML = "While I love all different forms of art, traditional art is where my heart truly lies. Something about the tactility of a real painting, drawing, or sculpture makes excites my brain. I love the idea that if you use basic materials in a very purposeful way you can create something of astounding beauty and inspiration. I have done many drawings in my time but truly what I have worked up towards is oil painting. You will see a few oil paintings as well as acrylic in this gallery. There are some paintings that are extremely colorful matching the design of this website, those are my artworks done with POSCA paint pens.";}
+    function graphicGallery() {currentGallery = gallery2; indxr = 0; carousel.style.paddingTop = "50px"; carousel.style.height = "200px"; updateGallery(currentGallery); updateDesktopGallery(currentGallery); traditional.style.color = "#69c1ed"; graphic.style.color = "white"; unique.style.color = "#69c1ed"; desktoptraditional.style.color = "#69c1ed"; desktopgraphic.style.color = "white"; desktopunique.style.color = "#69c1ed"; desktopDescText.innerHTML = "What I love about graphic design is how pure a form of communication it is. All art is a form of communication but graphic design distills communication down to a purer form. Not just utilitarian but asking how can I communicate this message in a way that represents my brand and personality. This means graphic design can be as complex as a digital painting yet still be for the purpose of communicating the brand of the client purely. I love problem-solving in graphic design and the way it feels when everything begins to click together, the whole becoming greater than the sum of its parts. I have done many different kinds of digital work which you can see in this gallery.";}
+    function uniqueGallery() {currentGallery = gallery3; indxr = 0; carousel.style.paddingTop = "100px"; carousel.style.height = "150px"; updateGallery(currentGallery); updateDesktopGallery(currentGallery); traditional.style.color = "#69c1ed"; graphic.style.color = "#69c1ed"; unique.style.color = "white"; desktoptraditional.style.color = "#69c1ed"; desktopgraphic.style.color = "#69c1ed"; desktopunique.style.color = "white"; desktopDescText.innerHTML = "Featured here are some of my more unique art works. These are ones not done on a convential canvas or convential medium. Included are murals, my spray painted jeep, and tattoo designs. I love this sort of work because it tends to be pretty memorable. Murals stick in peoples' heads and act as a way to give a space identity. Painting my jeep was a risk but now I can't imagine without it and people really attach to it. ";}
+    traditional.addEventListener("click", traditionalGallery);
+    graphic.addEventListener("click", graphicGallery);
+    unique.addEventListener("click", uniqueGallery);
+    desktoptraditional.addEventListener("click", traditionalGallery);
+    desktopgraphic.addEventListener("click", graphicGallery);
+    desktopunique.addEventListener("click", uniqueGallery);
+
+    //Aside Code
+    function shadowAside() {
+        asideBar.style.filter = "drop-shadow(5px 0px 5px rgba(0,0,0,.4))";
+    }
+
+    function openAside() {
+        asideBar.style.display = "block";
+    }
+    function closeAside() {
+        asideBar.style.display = "none";
+        asideBar.style.filter = "drop-shadow(0px 0px 0px black)";
+    }
+
+    //Aside Buttons
+    asideButton[0].addEventListener("click", openAside);
+    asideButton[1].addEventListener("click", openAside);
+    xButton.addEventListener("click", closeAside);
+    asideBar.addEventListener("mouseover", shadowAside);
+
+
+    //Dynamic Scaling Functions
+    function widescreen(width, height, jsheight, bheight, bwidth, bmargin) {
+        backgroundContainer.style.backgroundImage = "url('Assets/Wide/wide-bg.png')";
+        backgroundContainer.style.width = width;
+        backgroundContainer.style.height = height;
+        
+        mobileContent.style.display = "none";
+
+        desktopBody.style.height = bheight;
+        desktopBody.style.width = bwidth;
+        desktopBody.style.margin = bmargin;
+
+        widescreenFooter.style.width = width;
+        widescreenFooter.style.backgroundColor = "#72c486";
+        widescreenFooter.style.height = h - jsheight;
+        
+    }
+    function mobile() {
+        backgroundContainer.style.backgroundImage = "none";
+        backgroundContainer.style.width = "100%";
+        backgroundContainer.style.height = "700px";
+
+        mobileContent.style.display = "block";
+
+        widescreenFooter.style.display = "none";
+        desktopFooter.style.display = "none";
+        desktopContent.style.display = "none";
+    }
+
+    //Apply Dynamic Scaling
+    
+   function widescreenResize() {
+        w = window.innerWidth;
+        h = window.innerHeight;
+        if (w <= 800) {
+            mobile();
+        }
+        //720 monitor
+        if (w > 800 && w <= 1024) {
+            widescreen("1024px", "768px", 768, 451, 832, "56px 0 0 111px");
+            desktopBodyRight.style.paddingTop = "0px";
+            desktopcont.style.maxWidth = "350px";
+            desktopDescText.style.fontSize = "16px";
+            desktopPortfolioCut.style.width = "240px";
+            desktopWhiteLogo.style.width = "115px";
+            desktoptraditional.style.fontSize = "32px";
+            desktopgraphic.style.fontSize = "32px";
+            desktopunique.style.fontSize = "32px";
+            asideBar.style.width = "220px";
+            portfolioLink.style.width = "200px";
+            shopLink.style.width = "115px";
+            contactLink.style.width = "175px";
+            desktopnextArrow.style.width = "95px";
+            desktopprevArrow.style.width = "95px";
+            desktopcurrentImage.style.fontSize = "21px";
+            expandButtonImg.style.width = "25px";
+            expandClose.style.fontSize = "22px";
+            xButton.style.width = "30px";
+            xButton.style.height = "42px";
+            desktopFooter.style.marginTop = "80px";
+            desktopFooter.style.height = "82px";
+            footerSig.style.maxWidth = "321px";
+            desktopIcon[0].style.width = "40px";
+            desktopIcon[0].style.padding = "25px 15px 0 15px";
+            desktopIcon[1].style.width = "40px";
+            desktopIcon[1].style.padding = "25px 15px 0 15px";
+            desktopIcon[2].style.width = "40px";
+            desktopIcon[2].style.padding = "25px 15px 0 15px";
+        }
+        if (w > 1024 && w <= 1280) {
+            widescreen("1280px", "720px", 720, 451, 1077, "56px 0 0 111px");
+            desktopBodyRight.style.paddingTop = "0px";
+            desktopcont.style.maxWidth = "350px";
+            desktopDescText.style.fontSize = "16px";
+            desktopPortfolioCut.style.width = "240px";
+            desktopWhiteLogo.style.width = "115px";
+            desktoptraditional.style.fontSize = "32px";
+            desktopgraphic.style.fontSize = "32px";
+            desktopunique.style.fontSize = "32px";
+            asideBar.style.width = "220px";
+            portfolioLink.style.width = "200px";
+            shopLink.style.width = "115px";
+            contactLink.style.width = "175px";
+            desktopnextArrow.style.width = "95px";
+            desktopprevArrow.style.width = "95px";
+            desktopcurrentImage.style.fontSize = "21px";
+            expandButtonImg.style.width = "25px";
+            expandClose.style.fontSize = "22px";
+            xButton.style.width = "30px";
+            xButton.style.height = "42px";
+            desktopFooter.style.marginTop = "30px";
+            desktopFooter.style.height = "82px";
+            footerSig.style.maxWidth = "321px";
+            desktopIcon[0].style.width = "40px";
+            desktopIcon[0].style.padding = "25px 15px 0 15px";
+            desktopIcon[1].style.width = "40px";
+            desktopIcon[1].style.padding = "25px 15px 0 15px";
+            desktopIcon[2].style.width = "40px";
+            desktopIcon[2].style.padding = "25px 15px 0 15px";
+        }
+        //1080 monitor
+        if (w > 1280 && w <= 1366) {
+            widescreen("1366px", "768px", 900, 476, 1174, "56px 0 0 111px");
+            desktopBodyRight.style.paddingTop = "0px";
+            desktopcont.style.maxWidth = "350px";
+            desktopDescText.style.fontSize = "16px";
+            desktopPortfolioCut.style.width = "240px";
+            desktopWhiteLogo.style.width = "115px";
+            desktoptraditional.style.fontSize = "32px";
+            desktopgraphic.style.fontSize = "32px";
+            desktopunique.style.fontSize = "32px";
+            asideBar.style.width = "220px";
+            portfolioLink.style.width = "200px";
+            shopLink.style.width = "115px";
+            contactLink.style.width = "175px";
+            desktopnextArrow.style.width = "95px";
+            desktopprevArrow.style.width = "95px";
+            desktopcurrentImage.style.fontSize = "21px";
+            expandButtonImg.style.width = "25px";
+            expandClose.style.fontSize = "22px";
+            xButton.style.width = "30px";
+            xButton.style.height = "42px";
+            desktopFooter.style.marginTop = "51px";
+            desktopFooter.style.height = "82px";
+            footerSig.style.maxWidth = "321px";
+            desktopIcon[0].style.width = "40px";
+            desktopIcon[0].style.padding = "25px 15px 0 15px";
+            desktopIcon[1].style.width = "40px";
+            desktopIcon[1].style.padding = "25px 15px 0 15px";
+            desktopIcon[2].style.width = "40px";
+            desktopIcon[2].style.padding = "25px 15px 0 15px";
+        }
+        if (w > 1366 && w <= 1440) {
+            widescreen("1440px", "900px", 900, 602, 1252, "56px 0 0 111px");
+            desktopBodyRight.style.paddingTop = "0px";
+            desktopcont.style.maxWidth = "350px";
+            desktopDescText.style.fontSize = "16px";
+            desktopPortfolioCut.style.width = "240px";
+            desktopWhiteLogo.style.width = "115px";
+            desktoptraditional.style.fontSize = "32px";
+            desktopgraphic.style.fontSize = "32px";
+            desktopunique.style.fontSize = "32px";
+            asideBar.style.width = "220px";
+            portfolioLink.style.width = "200px";
+            shopLink.style.width = "115px";
+            contactLink.style.width = "175px";
+            desktopnextArrow.style.width = "95px";
+            desktopprevArrow.style.width = "95px";
+            desktopcurrentImage.style.fontSize = "21px";
+            expandButtonImg.style.width = "25px";
+            expandClose.style.fontSize = "22px";
+            xButton.style.width = "30px";
+            xButton.style.height = "42px";
+            desktopFooter.style.marginTop = "55px";
+            desktopFooter.style.height = "82px";
+            footerSig.style.maxWidth = "321px";
+            desktopIcon[0].style.width = "40px";
+            desktopIcon[0].style.padding = "25px 15px 0 15px";
+            desktopIcon[1].style.width = "40px";
+            desktopIcon[1].style.padding = "25px 15px 0 15px";
+            desktopIcon[2].style.width = "40px";
+            desktopIcon[2].style.padding = "25px 15px 0 15px";
+        }
+        if (w > 1440 && w <= 1536) {
+            widescreen("1536px", "864px", 864, 602, 1356, "56px 0 0 111px");
+            desktopBodyRight.style.paddingTop = "0px";
+            desktopcont.style.maxWidth = "350px";
+            desktopDescText.style.fontSize = "16px";
+            desktopPortfolioCut.style.width = "240px";
+            desktopWhiteLogo.style.width = "115px";
+            desktoptraditional.style.fontSize = "32px";
+            desktopgraphic.style.fontSize = "32px";
+            desktopunique.style.fontSize = "32px";
+            asideBar.style.width = "220px";
+            portfolioLink.style.width = "200px";
+            shopLink.style.width = "115px";
+            contactLink.style.width = "175px";
+            desktopnextArrow.style.width = "95px";
+            desktopprevArrow.style.width = "95px";
+            desktopcurrentImage.style.fontSize = "21px";
+            expandButtonImg.style.width = "25px";
+            expandClose.style.fontSize = "22px";
+            xButton.style.width = "30px";
+            xButton.style.height = "42px";
+            desktopFooter.style.marginTop = "18px";
+            desktopFooter.style.height = "82px";
+            footerSig.style.maxWidth = "321px";
+            desktopIcon[0].style.width = "40px";
+            desktopIcon[0].style.padding = "25px 15px 0 15px";
+            desktopIcon[1].style.width = "40px";
+            desktopIcon[1].style.padding = "25px 15px 0 15px";
+            desktopIcon[2].style.width = "40px";
+            desktopIcon[2].style.padding = "25px 15px 0 15px";
+        }
+        if (w > 1536 && w <= 1920) {
+            widescreen("1920px", "1080px", 1080, 736, 1741, "56px 0 0 111px");
+            desktopBodyRight.style.paddingTop = "55px";
+            desktopcont.style.maxWidth = "500px";
+            desktopDescText.style.fontSize = "16px";
+            desktopPortfolioCut.style.width = "240px";
+            desktopWhiteLogo.style.width = "115px";
+            desktoptraditional.style.fontSize = "32px";
+            desktopgraphic.style.fontSize = "32px";
+            desktopunique.style.fontSize = "32px";
+            asideBar.style.width = "220px";
+            portfolioLink.style.width = "200px";
+            shopLink.style.width = "115px";
+            contactLink.style.width = "175px";
+            desktopnextArrow.style.width = "95px";
+            desktopprevArrow.style.width = "95px";
+            desktopcurrentImage.style.fontSize = "21px";
+            expandButtonImg.style.width = "25px";
+            expandClose.style.fontSize = "22px";
+            xButton.style.width = "30px";
+            xButton.style.height = "42px";
+            desktopFooter.style.marginTop = "80px";
+            desktopFooter.style.height = "82px";
+            footerSig.style.maxWidth = "515px";
+            desktopIcon[0].style.width = "40px";
+            desktopIcon[0].style.padding = "25px 15px 0 15px";
+            desktopIcon[1].style.width = "40px";
+            desktopIcon[1].style.padding = "25px 15px 0 15px";
+            desktopIcon[2].style.width = "40px";
+            desktopIcon[2].style.padding = "25px 15px 0 15px";
+        }
+        //2k monitor
+        if (w > 1920 && w <= 2560) {
+            widescreen("2560px", "1440px", 1440, 1010, 2300, "56px 0 0 205px");
+            desktopBodyRight.style.paddingTop = "75px";
+            desktopcont.style.maxWidth = "800px";
+            desktopDescText.style.fontSize = "24px";
+            desktopPortfolioCut.style.width = "350px";
+            desktopWhiteLogo.style.width = "175px";
+            desktoptraditional.style.fontSize = "32px";
+            desktopgraphic.style.fontSize = "32px";
+            desktopunique.style.fontSize = "32px";
+            asideBar.style.width = "220px";
+            portfolioLink.style.width = "200px";
+            shopLink.style.width = "115px";
+            contactLink.style.width = "175px";
+            desktopnextArrow.style.width = "95px";
+            desktopprevArrow.style.width = "95px";
+            desktopcurrentImage.style.fontSize = "21px";
+            expandButtonImg.style.width = "25px";
+            expandClose.style.fontSize = "22px";
+            xButton.style.width = "30px";
+            xButton.style.height = "42px";
+            desktopFooter.style.marginTop = "124px";
+            desktopFooter.style.height = "118px";
+            footerSig.style.maxWidth = "600px";
+            desktopIcon[0].style.width = "84px";
+            desktopIcon[0].style.padding = "10px 15px 0 74px";
+            desktopIcon[1].style.width = "84px";
+            desktopIcon[1].style.padding = "10px 15px 0 74px";
+            desktopIcon[2].style.width = "84px";
+            desktopIcon[2].style.padding = "10px 15px 0 74px";
+        }
+        //4k monitor
+        if (w > 2560 && w <= 4096) {
+            widescreen("4096px", "2160px", 2160, 1465, 3712, "154px 0 0 350px");
+            desktopBodyRight.style.paddingTop = "100px";
+            desktopcont.style.maxWidth = "1300px";
+            desktopDescText.style.fontSize = "36px";
+            desktopPortfolioCut.style.width = "550px";
+            desktopWhiteLogo.style.width = "275px";
+            desktoptraditional.style.fontSize = "64px";
+            desktopgraphic.style.fontSize = "64px";
+            desktopunique.style.fontSize = "64px";
+            asideBar.style.width = "400px";
+            portfolioLink.style.width = "350px";
+            shopLink.style.width = "225px";
+            contactLink.style.width = "275px";
+            desktopnextArrow.style.width = "175px";
+            desktopprevArrow.style.width = "175px";
+            desktopcurrentImage.style.fontSize = "32px";
+            expandButtonImg.style.width = "50px";
+            expandClose.style.fontSize = "48px";
+            xButton.style.width = "30px";
+            xButton.style.height = "42px";
+            desktopFooter.style.marginTop = "325px";
+            desktopFooter.style.height = "451px";
+            desktopFooter.style.width = "3425px";
+            footerSig.style.width = "2400px";
+            footerSig.style.maxWidth = "2401px";
+            desktopIcon[0].style.width = "186px";
+            desktopIcon[0].style.padding = "126px 15px 0 138px";
+            desktopIcon[1].style.width = "186px";
+            desktopIcon[1].style.padding = "126px 15px 0 138px";
+            desktopIcon[2].style.width = "186px";
+            desktopIcon[2].style.padding = "126px 15px 0 138px";
+        }
+        //8k monitor
+        if (w >= 4096) {
+            widescreen("7680px", "4320px", 4320, 2941, 6900, "344px 0 0 600px");
+            desktopBodyRight.style.paddingTop = "200px";
+            desktopcont.style.maxWidth = "5000px";
+            desktopcont.style.width = "2000px";
+            desktopDescText.style.fontSize = "64px";
+            desktopPortfolioCut.style.width = "1300px";
+            desktopWhiteLogo.style.width = "600px";
+            desktoptraditional.style.fontSize = "120px";
+            desktopgraphic.style.fontSize = "120px";
+            desktopunique.style.fontSize = "120px";
+            asideBar.style.width = "600px";
+            portfolioLink.style.width = "550px";
+            shopLink.style.width = "300px";
+            contactLink.style.width = "375px";
+            desktopnextArrow.style.width = "375px";
+            desktopprevArrow.style.width = "375px";
+            desktopcurrentImage.style.fontSize = "86px";
+            expandButtonImg.style.width = "100px";
+            expandClose.style.fontSize = "100px";
+            xButton.style.width = "100px";
+            xButton.style.height = "165px";
+            desktopFooter.style.marginTop = "325px";
+            desktopFooter.style.height = "451px";
+            desktopFooter.style.width = "3425px";
+            footerSig.style.width = "2400px";
+            footerSig.style.maxWidth = "2401px";
+            desktopIcon[0].style.width = "186px";
+            desktopIcon[0].style.padding = "126px 15px 0 138px";
+            desktopIcon[1].style.width = "186px";
+            desktopIcon[1].style.padding = "126px 15px 0 138px";
+            desktopIcon[2].style.width = "186px";
+            desktopIcon[2].style.padding = "126px 15px 0 138px";
+        }
+   }
+
+    widescreenResize();
+    //Apply Scaling on Resize
+
+    window.addEventListener("resize", widescreenResize);
+
+   //Add Life to Logo
+   var whiteLogo = document.getElementById("whitelogo");
+   
+   function rotateLogo() {
+    var scrollDist = document.body.scrollTop;
+    whiteLogo.style.transform = `rotateZ(${scrollDist/2}deg)`;
+    console.log(scrollDist);
+   }
+
+   window.addEventListener("scroll", rotateLogo);
+
+   //Expand Image Functionality
+
+   function expandImage() {
+        expandedBlock.style.display = "flex";
+        expandedImage.innerHTML = desktopcont.innerHTML;
+   }
+
+   function closeExpand() {
+       expandedBlock.style.display = "none";
+   }
+
+   expandButton.addEventListener("click", expandImage);
+   expandClose.addEventListener("click", closeExpand);
+
+</script>
+
+</html>
